@@ -38,7 +38,7 @@ function Main(props) {
           </div>
         </div>
       </div>
-      <div className="bg-[#F9F5FF] sm:hidden pt-4">
+      <div className="bg-[#F9F5FF] sm:hidden pt-7">
         <div className="sm:px-48 px-4">
           <div className="">
             <textarea
