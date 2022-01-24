@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { UilExclamationCircle } from "@iconscout/react-unicons";
 
 function Main(props) {
   const [text, setText] = useState("");
@@ -10,6 +11,9 @@ function Main(props) {
     <>
       <div className="bg-[#F9F5FF]  pt-4 hidden sm:contents">
         <div className="sm:px-48 px-4">
+          <div className="flex justify-end items-center font-light text-[13px] pr-3 px-1">
+            {0.004 * text.length} menit
+          </div>
           <div className="">
             <textarea
               id="input"
@@ -24,7 +28,7 @@ function Main(props) {
             <div className="relative left- bottom-10 px-3">
               <div className="h-[80px] w-[80px] rounded-lg flex items-center justify-center  bg-[#1D1E29] text-white">
                 <div className="font-semibold text-2xl">
-                  <p>{text.split(" ").length}</p>
+                  <p>{text.split(" ").length - 1}</p>
                 </div>
               </div>
             </div>
@@ -38,8 +42,11 @@ function Main(props) {
           </div>
         </div>
       </div>
-      <div className="bg-[#F9F5FF] sm:hidden pt-7">
+      <div className="bg-[#F9F5FF] sm:hidden pt-6">
         <div className="sm:px-48 px-4">
+          <div className="flex justify-end items-center font-light text-[13px] pr-3 px-1">
+            {0.004 * text.length} menit
+          </div>
           <div className="">
             <textarea
               id="input"
@@ -54,7 +61,7 @@ function Main(props) {
             <div className="relative left- bottom-10 px-3">
               <div className="h-[70px] w-[70px] rounded-lg flex items-center justify-center  bg-[#1D1E29] text-white">
                 <div className="font-semibold text-xl">
-                  <p>{text.split(" ").length}</p>
+                  <p>{text.split(" ").length - 1}</p>
                 </div>
               </div>
             </div>
